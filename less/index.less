@@ -68,6 +68,7 @@ table {
 @display: flex;
 @center: center;
 @column-wrap: column nowrap;
+@row: row wrap;
 
 
 
@@ -109,6 +110,10 @@ html, body {
 	h1{
 		font-size: @h-size;
 	}
+
+	h2{
+		font-size: @h-size - 0.28rem;
+	}
 }
 
 .container{
@@ -122,6 +127,7 @@ html, body {
 		width: @aside;
 		background-color: @aside-color;
 		height: auto;
+		height: 1000px;
 	}
 }
 
@@ -145,7 +151,7 @@ header{
 	align-items: @center;
 	flex-flow: column nowrap;
 
-	.intro.profile{
+	.intro-profile{
 	height: @height - 200px;
 	}
 
@@ -153,4 +159,21 @@ header{
 		text-align: @center;
 	}
 }
+
+
+	.work{
+		display: @display;
+		flex-flow: @row;
+		justify-content: @center;
+		align-items: @center;
+		align-content: @center;
+		height: @height;
+		padding: 0 8%;
+	}
+
+	.summary-right{
+		width: @main-width;
+		padding: 5% 0;
+	}
+
 
