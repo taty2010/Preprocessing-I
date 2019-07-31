@@ -125,8 +125,32 @@ html, body {
 	}
 }
 
-//NAV//
-nav a {
-	padding: 5%;
+header{
+
+	nav{
+		height: 70px;
+		display: @display;
+		justify-content: @center;
+		align-items: @center;
+
+		a {
+			padding: 5%;
+		}
+	}
+}
+
+.intro-container{
+	display: @display;
+	justify-content: @center;
+	align-items: @center;
+	flex-flow: column nowrap;
+
+	.intro.profile{
+	height: @height - 200px;
+	}
+
+	h1{
+		text-align: @center;
+	}
 }
 

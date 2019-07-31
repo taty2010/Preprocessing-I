@@ -176,6 +176,24 @@ body h1 {
   background-color: #aaade2;
   height: auto;
 }
-nav a {
+header nav {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
   padding: 5%;
+}
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.intro-container .intro.profile {
+  height: 300px;
+}
+.intro-container h1 {
+  text-align: center;
 }
