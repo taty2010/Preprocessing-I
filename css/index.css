@@ -280,4 +280,11 @@ table {
 }
 table th {
   font-weight: 800;
+  text-align: left;
+}
+table td {
+  color: #535353;
+}
+footer {
+  text-align: center;
 }
