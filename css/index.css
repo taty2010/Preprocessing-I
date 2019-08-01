@@ -266,6 +266,8 @@ body h3 {
 }
 .main-container .summary-right ul li {
   padding: 0 5%;
+  font-size: 4rem;
+  color: #d6a198;
 }
 .education {
   padding: 0 5%;
