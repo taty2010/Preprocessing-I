@@ -200,9 +200,10 @@ body h3 {
   align-items: center;
   flex-flow: column nowrap;
   width: 90%;
+  margin: 0 auto;
 }
 .intro-container .intro {
-  height: auto;
+  height: 250px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -216,14 +217,18 @@ body h3 {
 .intro-container h1 {
   text-align: center;
 }
+.intro-container h3 {
+  line-height: 35px;
+}
 .intro-container .contact p {
   padding: 5% 8%;
 }
 .intro-container .contact ul {
   text-align: center;
+  line-height: 25px;
 }
 .intro-container .contact button {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -231,7 +236,7 @@ body h3 {
   margin: 0 auto;
   background-color: #3f3d56;
 }
-.profile {
+.intro.profile {
   padding-bottom: 30px;
   border-bottom: 1px solid white;
   height: auto;

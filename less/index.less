@@ -156,9 +156,10 @@ html, body {
 	align-items: @center;
 	flex-flow: column nowrap;
 	width: @main-width - 10%;
+	margin: 0 auto;
 
 	.intro{
-	height: auto;
+	height: 250px;
 	display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -175,16 +176,21 @@ html, body {
 		text-align: @center;
 	}
 
+	h3{
+		line-height: 35px;
+	}
+
 	.contact p{
 		padding: 5% 8%;
 	}
 	
 	.contact ul {
 		text-align: center;
+		line-height: 25px;
 	}
 	
 	.contact button{
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: center;
 		align-content: center;
@@ -194,7 +200,7 @@ html, body {
 	}
 }
 
-.profile{
+.intro.profile{
 	padding-bottom: 30px;
 	border-bottom: 1px solid white;
 	height: auto;
