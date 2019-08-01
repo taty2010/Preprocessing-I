@@ -126,14 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-h1,
-h2,
-h3 {
-  font-family: 'Staatliches', cursive;
-}
-p {
-  font-family: 'Roboto', sans-serif;
-}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -151,6 +143,14 @@ body body {
   background-color: white;
   font-size: 14px;
 }
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3 {
+  font-family: 'Staatliches', cursive;
+}
 html a,
 body a {
   font-size: 1rem;
@@ -160,6 +160,7 @@ body a {
 html p,
 body p {
   font-size: 1.14rem;
+  font-family: 'Roboto', sans-serif;
 }
 html h1,
 body h1 {
@@ -181,9 +182,8 @@ body h3 {
 }
 .container aside {
   width: 30%;
-  background: linear-gradient(to bottom, #aaade2, white);
+  background-color: #d6a198;
   height: auto;
-  height: 1000px;
 }
 .container aside header nav {
   height: 70px;
@@ -192,16 +192,18 @@ body h3 {
   align-items: center;
 }
 .container aside header nav a {
-  padding: 5%;
+  padding: 3%;
 }
 .intro-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  width: 90%;
+  margin: 0 auto;
 }
 .intro-container .intro {
-  height: 300px;
+  height: 250px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -214,15 +216,20 @@ body h3 {
 }
 .intro-container h1 {
   text-align: center;
+  line-height: 45px;
+}
+.intro-container h3 {
+  line-height: 35px;
 }
 .intro-container .contact p {
   padding: 5% 8%;
 }
 .intro-container .contact ul {
   text-align: center;
+  line-height: 25px;
 }
 .intro-container .contact button {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -230,8 +237,14 @@ body h3 {
   margin: 0 auto;
   background-color: #3f3d56;
 }
+.intro.profile {
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+  height: auto;
+}
 .main-container {
   width: 70%;
+  padding: 0 5%;
 }
 .main-container .work {
   display: flex;
@@ -239,8 +252,18 @@ body h3 {
   justify-content: left;
   align-items: center;
   align-content: center;
-  height: 400px;
-  padding: 0 8%;
+  height: auto;
+  padding: 0 5%;
+  margin-top: 5%;
+}
+.main-container h2 {
+  width: 100%;
+  line-height: 45px;
+  border-bottom: 1px solid #d6a198;
+}
+.main-container p {
+  line-height: 25px;
+  padding-top: 5%;
 }
 .main-container .summary-right {
   width: 100%;
@@ -248,14 +271,16 @@ body h3 {
 }
 .main-container .summary-right ul {
   display: flex;
-  padding: 5%;
+  padding: 5% 0;
   align-content: center;
 }
 .main-container .summary-right ul li {
-  padding: 0 5%;
+  padding: 0 4%;
+  font-size: 4rem;
+  color: #d6a198;
 }
 .education {
-  padding: 0 8%;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,4 +289,14 @@ body h3 {
 table {
   border-collapse: separate;
   border-spacing: 30px;
+}
+table th {
+  font-weight: 800;
+  text-align: left;
+}
+table td {
+  color: #535353;
+}
+footer {
+  text-align: center;
 }

@@ -51,7 +51,7 @@ table {
 //COLORS//
 @body: white;
 @container: gray;
-@aside-color: linear-gradient(to bottom, #aaade2, white);
+@aside-color: #d6a198;
 
 //FONTS//
 @h-font: 'Staatliches', cursive;
@@ -71,15 +71,6 @@ table {
 @row: row wrap;
 
 
-
-h1, h2, h3{
-	font-family: @h-font;
-}
-
-p{
-	font-family: @p-font;
-}
-
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -97,6 +88,10 @@ html, body {
 		font-size: 14px
 	}
 
+	h1, h2, h3{
+		font-family: @h-font;
+	}
+
 	a{
 		font-size: 1rem;
 		text-decoration: none;
@@ -105,6 +100,7 @@ html, body {
 
 	p{
 		font-size: 1.14rem;
+		font-family: @p-font;
 	}
 
 	h1{
@@ -129,9 +125,8 @@ html, body {
 	// ASIDE//
 	aside{
 		width: @aside;
-		background: @aside-color;
+		background-color: @aside-color;
 		height: auto;
-		height: 1000px;
 
 		header{
 
@@ -142,7 +137,7 @@ html, body {
 				align-items: @center;
 		
 				a {
-					padding: 5%;
+					padding: 3%;
 				}
 			}
 		}
@@ -155,14 +150,16 @@ html, body {
 	justify-content: @center;
 	align-items: @center;
 	flex-flow: column nowrap;
+	width: @main-width - 10%;
+	margin: 0 auto;
 
 	.intro{
-	height: @height - 200px;
+	height: 250px;
 	display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
-    align-items: center;
+	align-items: center;
 	}
 
 	img{
@@ -172,6 +169,11 @@ html, body {
 
 	h1{
 		text-align: @center;
+		line-height: 45px;
+	}
+
+	h3{
+		line-height: 35px;
 	}
 
 	.contact p{
@@ -180,10 +182,11 @@ html, body {
 	
 	.contact ul {
 		text-align: center;
+		line-height: 25px;
 	}
 	
 	.contact button{
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: center;
 		align-content: center;
@@ -193,9 +196,16 @@ html, body {
 	}
 }
 
+.intro.profile{
+	padding-bottom: 30px;
+	border-bottom: 1px solid white;
+	height: auto;
+}
+
 
 .main-container{
 	width: @main-width - 30%;
+	padding: 0 5%;
 
 	.work{
 		display: @display;
@@ -203,8 +213,20 @@ html, body {
 		justify-content: left;
 		align-items: @center;
 		align-content: @center;
-		height: @height - 100px;
-		padding: 0 8%;
+		height: auto;
+		padding: 0 5%;
+		margin-top: 5%;
+	}
+
+	h2{
+		width: @main-width;
+		line-height: 45px;
+		border-bottom: 1px solid @aside-color;
+	}
+
+	p{
+		line-height: 25px;
+		padding-top: 5%;
 	}
 
 	.summary-right{
@@ -213,11 +235,13 @@ html, body {
 
 		ul{
 			display: @display;
-			padding: 5%;
+			padding: 5% 0;
 			align-content: @center;
 
 			li{
-				padding: 0 5%;
+				padding: 0 4%;
+				font-size: 4rem;
+				color: #d6a198;
 			}
 		}
 	}
@@ -225,7 +249,7 @@ html, body {
 }
 
 .education{
-	padding: 0 8%;
+	padding: 0 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,5 +258,18 @@ html, body {
 
 table{
 	border-collapse: separate;
-    border-spacing: 30px;
+	border-spacing: 30px;
+	
+	th{
+		font-weight: 800;
+		text-align: left;
+	}
+
+	td{
+		color: rgb(83, 83, 83);
+	}
+}
+
+footer{
+	text-align: center;
 }
