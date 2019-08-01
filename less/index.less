@@ -51,7 +51,7 @@ table {
 //COLORS//
 @body: white;
 @container: gray;
-@aside-color: linear-gradient(to bottom, #aaade2, white);
+@aside-color: #d6a198;
 
 //FONTS//
 @h-font: 'Staatliches', cursive;
@@ -129,7 +129,7 @@ html, body {
 	// ASIDE//
 	aside{
 		width: @aside;
-		background: @aside-color;
+		background-color: @aside-color;
 		height: auto;
 		height: 1000px;
 
@@ -155,14 +155,15 @@ html, body {
 	justify-content: @center;
 	align-items: @center;
 	flex-flow: column nowrap;
+	width: @main-width - 10%;
 
 	.intro{
-	height: @height - 200px;
+	height: auto;
 	display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
-    align-items: center;
+	align-items: center;
 	}
 
 	img{
@@ -191,6 +192,12 @@ html, body {
 		margin: 0 auto;
 		background-color: #3f3d56;
 	}
+}
+
+.profile{
+	padding-bottom: 30px;
+	border-bottom: 1px solid white;
+	height: auto;
 }
 
 
