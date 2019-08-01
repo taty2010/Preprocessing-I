@@ -126,14 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-h1,
-h2,
-h3 {
-  font-family: 'Staatliches', cursive;
-}
-p {
-  font-family: 'Roboto', sans-serif;
-}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -151,6 +143,14 @@ body body {
   background-color: white;
   font-size: 14px;
 }
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3 {
+  font-family: 'Staatliches', cursive;
+}
 html a,
 body a {
   font-size: 1rem;
@@ -160,6 +160,7 @@ body a {
 html p,
 body p {
   font-size: 1.14rem;
+  font-family: 'Roboto', sans-serif;
 }
 html h1,
 body h1 {
@@ -183,7 +184,6 @@ body h3 {
   width: 30%;
   background-color: #d6a198;
   height: auto;
-  height: 1000px;
 }
 .container aside header nav {
   height: 70px;
@@ -258,9 +258,11 @@ body h3 {
 }
 .main-container h2 {
   line-height: 45px;
+  border-bottom: 1px solid #d6a198;
 }
 .main-container p {
   line-height: 25px;
+  padding-top: 5%;
 }
 .main-container .summary-right {
   width: 100%;
@@ -268,11 +270,11 @@ body h3 {
 }
 .main-container .summary-right ul {
   display: flex;
-  padding: 5%;
+  padding: 5% 0;
   align-content: center;
 }
 .main-container .summary-right ul li {
-  padding: 0 5%;
+  padding: 0 4%;
   font-size: 4rem;
   color: #d6a198;
 }
