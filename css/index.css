@@ -169,6 +169,10 @@ html h2,
 body h2 {
   font-size: 2rem;
 }
+html h3,
+body h3 {
+  font-size: 1.43rem;
+}
 .container {
   width: 100%;
   height: auto;
@@ -177,17 +181,17 @@ body h2 {
 }
 .container aside {
   width: 30%;
-  background-color: #aaade2;
+  background: linear-gradient(to bottom, #aaade2, white);
   height: auto;
   height: 1000px;
 }
-header nav {
+.container aside header nav {
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header nav a {
+.container aside header nav a {
   padding: 5%;
 }
 .intro-container {
@@ -196,22 +200,68 @@ header nav a {
   align-items: center;
   flex-flow: column nowrap;
 }
-.intro-container .intro-profile {
+.intro-container .intro {
   height: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.intro-container img {
+  width: 50%;
+  padding: 5% 0;
 }
 .intro-container h1 {
   text-align: center;
 }
-.work {
+.intro-container .contact p {
+  padding: 5% 8%;
+}
+.intro-container .contact ul {
+  text-align: center;
+}
+.intro-container .contact button {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 500px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #3f3d56;
+}
+.main-container {
+  width: 70%;
+}
+.main-container .work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-items: center;
+  align-content: center;
+  height: 400px;
   padding: 0 8%;
 }
-.summary-right {
+.main-container .summary-right {
   width: 100%;
   padding: 5% 0;
+}
+.main-container .summary-right ul {
+  display: flex;
+  padding: 5%;
+  align-content: center;
+}
+.main-container .summary-right ul li {
+  padding: 0 5%;
+}
+.education {
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 30px;
 }
