@@ -126,6 +126,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.flexbox-row {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+.flexbox-rowWrap {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -133,15 +154,9 @@ table {
 html,
 body {
   height: 100%;
-}
-html html,
-body html {
-  font-size: 100%;
-}
-html body,
-body body {
   background-color: white;
   font-size: 14px;
+  font-size: 100%;
 }
 html h1,
 body h1,
@@ -180,32 +195,49 @@ body h3 {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
 .container aside {
   width: 30%;
   background-color: #d6a198;
   height: auto;
 }
+@media (max-width: 500px) {
+  .container aside {
+    width: 100%;
+  }
+}
 .container aside header nav {
   height: 70px;
   display: flex;
   justify-content: center;
+  align-content: center;
   align-items: center;
+  flex-flow: row nowrap;
 }
 .container aside header nav a {
   padding: 3%;
 }
 .intro-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
-  flex-flow: column nowrap;
   width: 90%;
   margin: 0 auto;
 }
 .intro-container .intro {
   height: 200px;
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -240,7 +272,9 @@ body h3 {
 .social ul {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
 }
 .social li {
   padding: 0 8%;
@@ -259,10 +293,10 @@ body h3 {
 }
 .main-container .work {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: left;
-  align-items: center;
+  justify-content: center;
   align-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   height: auto;
   padding: 0 5%;
   margin-top: 5%;
@@ -282,8 +316,11 @@ body h3 {
 }
 .main-container .summary-right ul {
   display: flex;
-  padding: 5% 0;
+  justify-content: center;
   align-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  padding: 5% 0;
 }
 .main-container .summary-right ul li {
   padding: 0 4%;
