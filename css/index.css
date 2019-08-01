@@ -192,7 +192,7 @@ body h3 {
   align-items: center;
 }
 .container aside header nav a {
-  padding: 5%;
+  padding: 3%;
 }
 .intro-container {
   display: flex;
@@ -216,6 +216,7 @@ body h3 {
 }
 .intro-container h1 {
   text-align: center;
+  line-height: 45px;
 }
 .intro-container h3 {
   line-height: 35px;
@@ -251,7 +252,8 @@ body h3 {
   align-items: center;
   align-content: center;
   height: 400px;
-  padding: 0 8%;
+  padding: 0 5%;
+  margin-top: 5%;
 }
 .main-container .summary-right {
   width: 100%;
@@ -266,7 +268,7 @@ body h3 {
   padding: 0 5%;
 }
 .education {
-  padding: 0 8%;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -275,4 +277,7 @@ body h3 {
 table {
   border-collapse: separate;
   border-spacing: 30px;
+}
+table th {
+  font-weight: 800;
 }
