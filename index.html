@@ -5,7 +5,9 @@
   <meta charset="utf-8">
 
   <title>My Resume</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Staatliches&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f8b37177f9.js"></script>
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +16,105 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <aside>
+      <header>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+      <section class='intro-container'>
+        <div class="intro profile">
+          <img src='./img/portrait.svg' alt='Picture of me'>
+          <h1>Name <br> Web Dev</h1>
+          <p>Technology is my jam!</p>
+        </div>
+        <div class="intro contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>Phone: 888-888-8888</li>
+              <li>Email: myname@gmail.com</li>
+              <li>Website: myname.com</li>
+            </ul>
+        </div>
+        <div class="social">
+          <ul>
+            <li><i class="fab fa-dribbble"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+          </ul>
+        </div>
+    </section>
+  </aside>
+  <div class="main-container">
+    <main>
+        <section class="work summary">
+          <div class="summary-left">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto ut et consequatur molestias hic nobis saepe sunt eum, quos consequuntur. 
+              Ut, pariatur earum temporibus culpa non eos asperiores velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat praesentium ex illum 
+              eum odit dignissimos dolore velit voluptatem nostrum optio perferendis, in, amet consectetur nam incidunt quisquam alias porro magnam.</p>
+          </div>
+          <div class="summary-right">
+            <h2>Stuff I'm Good At:</h2>
+            <ul>
+              <li><i class="fab fa-html5"></i></li><!--ADD FONTAWESOME HERE-->
+              <li><i class="fab fa-css3"></i></li>
+              <li><i class="fab fa-less"></i></li>
+              <li><i class="fab fa-js"></i></li>
+              <li><i class="fas fa-pen-nib"></i></li>
+            </ul>
+          </div>
+        </section>
+        <section class= "education">
+          <h2>Education</h2>
+          <div class="school university">
+            <p>Univeristy of Nowhere | Bachelors of Fine Arts | 2010-2014</p>
+          </div>
+          <div class="school trade">
+            <p>Lambda School | Software Engineer | 019 - Present</p>
+          </div>
+        </section>
+        <section class="work history">
+          <h2>Work History</h2>
+            <table>
+              <tr>
+                <th>Yrs</th>
+                <th>Company</th>
+                <th>Title</th>
+                <th>Tech Used</th>
+              </tr>
+              <tr>
+                <td>2.5</td>
+                <td>Job1</td>
+                <td>Software/Computer Sales Associate</td>
+                <td>N/A</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Job2</td>
+                <td>Support Specialist I, Support Specialist II</td>
+                <td>Excel, Word, peoplesoft, </td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>Job3</td>
+                <td>Web Content Editor</td>
+                <td>Drupal 7/8, Dreamweaver, Photoshop, HTML, CSS, </td>
+              </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>Copyright Awesomeness 2019</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

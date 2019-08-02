@@ -1,1 +1,341 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.flexbox-row {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+.flexbox-rowWrap {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: white;
+  font-size: 14px;
+  font-size: 100%;
+}
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3 {
+  font-family: 'Staatliches', cursive;
+}
+html a,
+body a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+html p,
+body p {
+  font-size: 1.14rem;
+  font-family: 'Roboto', sans-serif;
+}
+html h1,
+body h1 {
+  font-size: 2.28rem;
+}
+html h2,
+body h2 {
+  font-size: 2rem;
+}
+html h3,
+body h3 {
+  font-size: 1.43rem;
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+.container aside {
+  width: 30%;
+  background-color: #d6a198;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .container aside {
+    width: 100%;
+  }
+}
+.container aside header nav {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+.container aside header nav a {
+  padding: 3%;
+}
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.intro-container .intro {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.intro-container img {
+  width: 50%;
+  padding: 5% 0;
+}
+.intro-container h1 {
+  text-align: center;
+  line-height: 45px;
+}
+.intro-container h3 {
+  line-height: 35px;
+}
+.intro-container .contact p {
+  padding: 5% 8%;
+}
+.intro-container .contact ul {
+  text-align: center;
+  line-height: 25px;
+}
+.social ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+.social li {
+  padding: 0 8%;
+}
+.social li a {
+  font-size: 1rem;
+}
+.intro.profile {
+  padding: 15% 0 8% 0;
+  border-bottom: 1px solid white;
+  height: auto;
+}
+.main-container {
+  width: 70%;
+  padding: 0 5%;
+}
+.main-container .work {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  height: auto;
+  padding: 0 5%;
+  margin-top: 5%;
+}
+.main-container h2 {
+  width: 100%;
+  line-height: 45px;
+  border-bottom: 1px solid #d6a198;
+}
+.main-container p {
+  line-height: 25px;
+  padding-top: 5%;
+}
+.main-container .summary-right {
+  width: 100%;
+  padding: 5% 0;
+}
+.main-container .summary-right ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  padding: 5% 0;
+}
+.main-container .summary-right ul li {
+  padding: 0 4%;
+  font-size: 4rem;
+  color: #d6a198;
+}
+.education {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 30px;
+}
+table th {
+  font-weight: 800;
+  text-align: left;
+}
+table td {
+  color: #535353;
+}
+footer {
+  text-align: center;
+}
