@@ -260,15 +260,6 @@ body h3 {
   text-align: center;
   line-height: 25px;
 }
-.intro-container .contact button {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 50%;
-  margin: 0 auto;
-  background-color: #3f3d56;
-}
 .social ul {
   display: flex;
   justify-content: center;

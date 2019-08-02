@@ -52,10 +52,12 @@ table {
 @body: white;
 @container: gray;
 @aside-color: #d6a198;
+@td-color: rgb(83, 83, 83);
 //FONTS//
 @h-font: 'Staatliches', cursive;
 @p-font: 'Roboto', sans-serif;
 @h-size: 2.28rem;
+@line-height: 45px;
 //SIZING//
 @main-width: 100%;
 @aside: @main-width - 70%;
@@ -84,10 +86,6 @@ table {
 	align-content: center;
 	align-items: center;
 }
-@display: flex;
-@center: center;
-@column-wrap: column nowrap;
-@row: row wrap;
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -105,7 +103,7 @@ html, body {
 	}
 
 	a{
-		font-size: 1rem;
+		font-size: @h-size - 1.28rem;
 		text-decoration: none;
 		color: @body;
 	}
@@ -131,12 +129,11 @@ html, body {
 .container{
 	width: @main-width;
 	height: auto;
-	display: @display;
-	justify-content: @center;
+	display: flex;
+	justify-content: center;
 	@media (max-width: 500px){
 		.flexbox-column();
 	}
-
 	// ASIDE//
 	aside{
 		width: @aside;
@@ -167,7 +164,6 @@ html, body {
 
 	.intro{
 	height: 200px;
-	display: flex;
     .flexbox-column();
 	}
 
@@ -177,12 +173,12 @@ html, body {
 	}
 
 	h1{
-		text-align: @center;
-		line-height: 45px;
+		text-align: center;
+		line-height: @line-height;
 	}
 
 	h3{
-		line-height: 35px;
+		line-height: @line-height - 10px;
 	}
 
 	.contact p{
@@ -191,17 +187,7 @@ html, body {
 	
 	.contact ul {
 		text-align: center;
-		line-height: 25px;
-	}
-	
-	.contact button{
-		display: none;
-		justify-content: center;
-		align-items: center;
-		align-content: center;
-		width: 50%;
-		margin: 0 auto;
-		background-color: #3f3d56;
+		line-height: @line-height - 20px;
 	}
 }
 
@@ -238,12 +224,12 @@ html, body {
 
 	h2{
 		width: @main-width;
-		line-height: 45px;
+		line-height: @line-height;
 		border-bottom: 1px solid @aside-color;
 	}
 
 	p{
-		line-height: 25px;
+		line-height: @line-height - 20px;
 		padding-top: 5%;
 	}
 
@@ -259,7 +245,7 @@ html, body {
 			li{
 				padding: 0 4%;
 				font-size: 4rem;
-				color: #d6a198;
+				color: @aside-color;
 			}
 		}
 	}
@@ -284,7 +270,7 @@ table{
 	}
 
 	td{
-		color: rgb(83, 83, 83);
+		color: @td-color;
 	}
 }
 
